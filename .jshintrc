@@ -1,0 +1,17 @@
+{
+  "browser": true,
+  "esnext": true,
+  "globals": {
+    "require": true,
+    "module": true,
+    "exports": true,
+    "console": true,
+    "__dirname": true,
+    "process": true
+  },
+  "globalstrict": false,
+  "quotmark": false,
+  "undef": true,
+  "unused": true,
+  "asi": true
+}

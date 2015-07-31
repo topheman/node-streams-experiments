@@ -1,6 +1,11 @@
 var Stream = require('stream');
 var util = require('util');
 
+/*
+ * @param {Number} [interval=100] Number of ms between each iteration
+ * @param {Number} [max=100] Maximum number of iteration
+ * @return {Stream}
+ */
 function NumberSequence(interval, max){
 	Stream.call(this);
 	this.readable = true;
