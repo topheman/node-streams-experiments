@@ -12,7 +12,6 @@ function NumberSequence(interval, max){
 	this.interval = typeof interval === 'undefined' ? 100 : interval;
 	this.max = typeof interval === 'undefined' ? 100 : max;
 	this.current = 0;
-	console.log('init: ' + this.current);
 }
 
 util.inherits(NumberSequence,Stream);
@@ -28,6 +27,7 @@ function nextStep(){
 }
 
 NumberSequence.prototype.start = function(){
+	this.emit('data','from ' + this.current + ' to ' + this.max);
 	nextStep.call(this);
 }
 NumberSequence.prototype.end = function(){
