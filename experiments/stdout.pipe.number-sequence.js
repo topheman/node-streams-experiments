@@ -20,6 +20,7 @@ numberSequence
 
 numberSequence.on('end',function(chunk){
   process.stdout.write('ended at: ' + chunk + '\n');
+  process.exit();
 })
 
 numberSequence.start();

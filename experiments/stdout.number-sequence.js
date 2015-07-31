@@ -12,6 +12,7 @@ numberSequence.on('end',function(number){
 
 numberSequence.on('error',function(error){
 	process.stdout.write('error: ' + error + '\n');
+  process.exit();
 })
 
 numberSequence.start();
