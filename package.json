@@ -17,5 +17,6 @@
     "stream"
   ],
   "author": "Christophe Rosset <tophe@topheman.com> (http://labs.topheman.com/)",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {}
 }
